@@ -67,6 +67,10 @@ $app->singleton(
 //     'auth' => App\Http\Middleware\Authenticate::class,
 // ]);
 
+ $app->routeMiddleware([
+     'sanitycheck' => App\Http\Middleware\SanityCheck::class,
+ ]);
+
 /*
 |--------------------------------------------------------------------------
 | Register Service Providers
